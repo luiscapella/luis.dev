@@ -14,12 +14,13 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
-    "build": "run-s clean build:*"
+    "build": "run-s clean build:*",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/luis.dev/"
   },
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/lene.dev.git"
+    "url": "https://github.com/luiscapella/luis.dev.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
