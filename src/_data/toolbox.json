@@ -1,0 +1,70 @@
+{
+  "tools": [
+    {
+      "division": "Languages",
+      "preference": ["Semantic HTML", "CSS", "JavaScript, Node.js", "SVG", "PHP", "Bash"],
+      "possible": ["Python"],
+      "nope": []
+    },
+    {
+      "division": "CSS & JS and Frameworks",
+      "preference": ["I prefer everything vanilla"],
+      "possible": ["Tailwind CSS", "Alpine.js", "Svelte", "React Native (Expo)"],
+      "nope": ["React"]
+    },
+    {
+      "division": "Site generators &, web- & meta-frameworks",
+      "preference": ["Eleventy", "Astro", "Enhance"],
+      "possible": ["SvelteKit"],
+      "nope": ["Next.js"]
+    },
+    {
+      "division": "API",
+      "preference": ["REST", "GraphQL"],
+      "possible": [],
+      "nope": []
+    },
+    {
+      "division": "CMS",
+      "preference": ["Sanity", "Contentful", "Decap CMS", "Pages CMS", "Cloudcannon", "Shopify", "Storyblok"],
+      "possible": ["Strapi", "Tina", "Wordpress", "Craft"],
+      "nope": []
+    },
+    {
+      "division": "Templating Languages ",
+      "preference": ["Markdown", "Nunjucks", "Liquid", "webC", "Twig", "Pug"],
+      "possible": ["Blade"],
+      "nope": []
+    },
+    {
+      "division": "Bundler / Build tools",
+      "preference": ["vite", "esbuild"],
+      "possible": ["snowpack", "parcel"],
+      "nope": ["webpack"]
+    },
+    {
+      "division": "CSS & JS preprocessors ",
+      "preference": ["PostCSS", "Lightning CSS"],
+      "possible": ["Typescript", "Sass"],
+      "nope": []
+    },
+    {
+      "division": "Version Control, Hosts",
+      "preference": ["GitHub/GitLab", "Netlify", "Neocities", "Siteground"],
+      "possible": [],
+      "nope": []
+    },
+    {
+      "division": "Design",
+      "preference": ["Figma"],
+      "possible": ["Penpot"],
+      "nope": ["Adobe products (not working on Linux)"]
+    },
+    {
+      "division": "Discover / Monitoring",
+      "preference": ["Plausible.io", "Fathom", "ahrefs"],
+      "possible": [],
+      "nope": ["Google Analytics"]
+    }
+  ]
+}

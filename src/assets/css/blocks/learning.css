@@ -1,0 +1,29 @@
+.learning {
+  --sidebar-target-width: 13rem;
+  --gutter: var(--space-xl);
+  padding-block: var(--space-l) var(--space-xl);
+}
+
+.learning > :first-child {
+  transform: rotate(-2deg);
+}
+
+.learning {
+  border-block-end: 2px dashed var(--color-text);
+}
+
+.learning img {
+  width: fit-content;
+  outline: 2px solid var(--color-text);
+}
+
+.learning p {
+  font-size: var(--size-step-min-1);
+}
+
+.learning ul {
+  --gutter: var(--space-s);
+  font-size: var(--size-step-min-2);
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+}

@@ -1,0 +1,51 @@
+/* Global variables.  */
+/* The colors are defined in src/_data/designTokens/colors.js, using the colorjs.io package. */
+
+/* Basic variable definitions for color schemes */
+:root {
+  color-scheme: light dark;
+  --gutter: var(--space-m-l);
+  --border-radius: 0.1rem;
+  --border-radius-large: 0.7rem;
+  --transition-duration: 250ms;
+  --transition-timing: ease;
+  --wrapper-width: 100rem;
+  --tracking: -0.05ch;
+  --tracking-s: -0.075ch;
+  --tracking-wide: 0.05ch;
+
+  --gradient-conic: conic-gradient(
+    var(--color-primary) 0 28%,
+    var(--color-glare) 0 67%,
+    var(--color-shade) 0 100%
+  );
+  --gradient-linear: linear-gradient(90deg, #cf4662 0%, #fbbe25 30%, #62c95c 50%, #08bccb 75%, #a977d5 90%);
+}
+
+/* Default / Light theme specific variables */
+:root,
+:root[data-theme='light'] {
+  --color-primary: gold;
+  --color-shade: color-mix(in oklab, var(--color-primary) 90%, black);
+  --color-glare: color-mix(in oklab, var(--color-primary) 70%, white);
+  --color-light: color-mix(in oklab, var(--color-primary) 5%, white);
+  --color-dark: color-mix(in oklab, var(--color-primary) 20%, black);
+  --color-bg: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-bg-accent: color-mix(in oklab, var(--color-bg) 95%, var(--color-text));
+}
+
+/* Dark theme specific variables based on system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-dark);
+    --color-text: var(--color-light);
+    --color-bg-accent: color-mix(in oklab, var(--color-text) 4%, var(--color-bg));
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-bg: var(--color-dark);
+  --color-text: var(--color-light);
+  --color-bg-accent: color-mix(in oklab, var(--color-text) 4%, var(--color-bg));
+}
